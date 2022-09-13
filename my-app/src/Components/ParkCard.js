@@ -14,9 +14,9 @@ function ParkCard({image, name, description, activities}) {
         return (
             <div>
                 <p>{description}</p>
-                <p>{activities[0].name}</p>
-                <p>{activities[1].name}</p>
-                <p>{activities[2].name}</p>
+                <p> Activities Include: {activities[0].name} and {activities[1].name}</p>
+                
+                
                 
                 
 

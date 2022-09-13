@@ -8,8 +8,8 @@ function ParkList ({ parks }){
   const parkData = newParkData.map( park => 
         <ParkCard
           key={park.id}
-          name={park.name}
-          image={park.image}
+          name={park.fullName}
+          image={park.images[0].url}
         />)
   
     return (

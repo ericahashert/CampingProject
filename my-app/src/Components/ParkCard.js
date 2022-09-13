@@ -1,7 +1,9 @@
 import React, {useState} from 'react';
 
-function ParkCard({image, name}) {
+function ParkCard({image, name, description, activities}) {
     const [showFront, setShowFront] = useState(true);
+    console.log(activities[0])
+    if (activities === undefined) return <p>LOADING...</p>
 
     function frontCard() {
         return (
@@ -10,7 +12,15 @@ function ParkCard({image, name}) {
     }
     function backCard() {
         return (
-            <img className ="card-image" src=""/>
+            <div>
+                <p>{description}</p>
+                <p>{activities[0].name}</p>
+                <p>{activities[1].name}</p>
+                <p>{activities[2].name}</p>
+                
+                
+
+            </div>
         )
     }
 

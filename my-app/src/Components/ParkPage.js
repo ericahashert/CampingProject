@@ -66,9 +66,9 @@ function ParkPage() {
     console.log(parks)
       
     
-    // const displayedParks = parks.filter((park) => {
-    //   return park.fullName.toLowerCase().includes(searchTerm.toLowerCase());
-    //   });
+     const displayedParks = parks.filter((park) => {
+       return park.fullName.toLowerCase().includes(searchTerm.toLowerCase());
+      });
 
 
   
@@ -77,7 +77,7 @@ function ParkPage() {
 return (
     <div>
         <Search searchTerm={searchTerm} onSearchChange={setSearchTerm}/>
-        <ParkList parks={parks} />
+        <ParkList parks={displayedParks} />
         {/* <ParkGallery />
         <ParkMap /> */}
     </div>

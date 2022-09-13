@@ -1,10 +1,11 @@
 import React from 'react';
 
 function ParkCard({ park }) {
-    const {name} = park;
+    const {fullName} = park;
 return(
     <div>
-        {name}
+        {fullName}
     </div>
     )
 }
+ export default ParkCard;

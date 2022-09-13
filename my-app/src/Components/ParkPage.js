@@ -6,7 +6,7 @@ function ParkPage() {
     const [parks, setParks] = useState([]);
     const [searchTerm, setSearchTerm] = useState("");
     const displayedParks = parks.filter((park) => {
-        return park.name.toLowerCase().includes(searchTerm.toLowerCase());
+        return park.fullName.toLowerCase().includes(searchTerm.toLowerCase());
         });
   
     useEffect(() => {

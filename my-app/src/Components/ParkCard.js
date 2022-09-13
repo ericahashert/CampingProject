@@ -4,11 +4,11 @@ function ParkCard({image, name}) {
 
 
     return (
-        <div>
-            <li className="card">
-            <img src={image} alt={name} />
-            <h4>{name}</h4>
-            </li>
+        <div className = "card">
+            <img className ="card-image" src={image} alt={name} />
+            <div className="container">
+            <h4 className='card-title'>{name}</h4>
+            </div>
         </div>
     );
     }

@@ -1,12 +1,20 @@
 import React from 'react';
 
-function ParkCard({ park }) {
-    const {name} = park;
-return(
-    <div>
-        <h1>parks</h1>
-    </div>
-    )
-}
+function ParkCard({image, name}) {
+
+
+    return (
+        <div>
+            <li className="card">
+            <img src={image} alt={name} />
+            <h4>{name}</h4>
+            </li>
+        </div>
+    );
+    }
 
 export default ParkCard;
+
+
+
+

@@ -36,10 +36,11 @@ header h1 {
 }
 .card-title {
   font-size: 11px;
+  text-align: center;
 }
 .cards {
   display: grid;
   width : 300px;
-  grid-template-columns: repeat(3,1fr);
+  grid-template-columns: repeat(4,1fr);
   grid-gap: 16px;
 }

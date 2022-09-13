@@ -8,8 +8,8 @@ function App() {
   return (
     <div className="app">
       <Header />
-      <ParkPage />
       <NavBar />
+      <ParkPage />
     </div>
   );
 }

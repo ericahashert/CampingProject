@@ -1,22 +1,22 @@
 import React from 'react';
 import ParkCard from './ParkCard';
-import Search from './Search';
 
-function ParkList ({parks}){
-    
-    return(
-        <div>
-        
-             {parks.map((park) => {
-        return (
-          <ParkCard
-            key={park.id}
-            park={park}
-            />
-            );
-      })}
-         </div>
-    )
-}
+function ParkList ({ parks }){
+
+  const newParkData = parks;
+  console.log(newParkData);
+  const parkData = newParkData.map( park => 
+        <ParkCard
+          key={park.id}
+          name={park.fullName}
+          image={park.images[0].url}
+        />)
+  
+    return (
+      <ul className="cards">{parkData}</ul>
+    );
+  }
+  
+
 
 export default ParkList;

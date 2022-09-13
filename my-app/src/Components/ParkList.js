@@ -1,6 +1,5 @@
 import React from 'react';
 import ParkCard from './ParkCard';
-import Search from './Search';
 
 function ParkList ({parks}){
     

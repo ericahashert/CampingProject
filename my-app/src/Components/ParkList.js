@@ -10,7 +10,7 @@ function ParkList ({parks}){
         return (
           <ParkCard
             key={park.id}
-            park={park}
+            park={parks.fullName}
             />
             );
       })}

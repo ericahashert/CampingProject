@@ -4,7 +4,7 @@ function ParkCard({ park }) {
     const {name} = park;
 return(
     <div>
-        {name}
+        <h1>parks</h1>
     </div>
     )
 }

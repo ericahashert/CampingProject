@@ -10,45 +10,45 @@ function ParkPage() {
       "https://developer.nps.gov/api/v1/parks?parkCode=&api_key=j1k4pib60NZrUWACuiahvKfh9s7O7BOhHRr4qoGG"
     ).then((res) => res.json());
 
-    const fetchReq2 = fetch(
-      "https://developer.nps.gov/api/v1/parks?start=50parkCode=&api_key=j1k4pib60NZrUWACuiahvKfh9s7O7BOhHRr4qoGG"
-    ).then((res) => res.json());
+    // const fetchReq2 = fetch(
+    //   "https://developer.nps.gov/api/v1/parks?start=50parkCode=&api_key=j1k4pib60NZrUWACuiahvKfh9s7O7BOhHRr4qoGG"
+    // ).then((res) => res.json());
 
-    const fetchReq3 = fetch(
-      "https://developer.nps.gov/api/v1/parks?start=100parkCode=&api_key=j1k4pib60NZrUWACuiahvKfh9s7O7BOhHRr4qoGG"
-    ).then((res) => res.json());
+    // const fetchReq3 = fetch(
+    //   "https://developer.nps.gov/api/v1/parks?start=100parkCode=&api_key=j1k4pib60NZrUWACuiahvKfh9s7O7BOhHRr4qoGG"
+    // ).then((res) => res.json());
 
-    const fetchReq4 = fetch(
-      "https://developer.nps.gov/api/v1/parks?start=150parkCode=&api_key=j1k4pib60NZrUWACuiahvKfh9s7O7BOhHRr4qoGG"
-    ).then((res) => res.json());
+    // const fetchReq4 = fetch(
+    //   "https://developer.nps.gov/api/v1/parks?start=150parkCode=&api_key=j1k4pib60NZrUWACuiahvKfh9s7O7BOhHRr4qoGG"
+    // ).then((res) => res.json());
 
-    const fetchReq5 = fetch(
-      "https://developer.nps.gov/api/v1/parks?start=200parkCode=&api_key=j1k4pib60NZrUWACuiahvKfh9s7O7BOhHRr4qoGG"
-    ).then((res) => res.json());
+    // const fetchReq5 = fetch(
+    //   "https://developer.nps.gov/api/v1/parks?start=200parkCode=&api_key=j1k4pib60NZrUWACuiahvKfh9s7O7BOhHRr4qoGG"
+    // ).then((res) => res.json());
 
-    const fetchReq6 = fetch(
-      "https://developer.nps.gov/api/v1/parks?start=250parkCode=&api_key=j1k4pib60NZrUWACuiahvKfh9s7O7BOhHRr4qoGG"
-    ).then((res) => res.json());
+    // const fetchReq6 = fetch(
+    //   "https://developer.nps.gov/api/v1/parks?start=250parkCode=&api_key=j1k4pib60NZrUWACuiahvKfh9s7O7BOhHRr4qoGG"
+    // ).then((res) => res.json());
 
-    const fetchReq7 = fetch(
-      "https://developer.nps.gov/api/v1/parks?start=300parkCode=&api_key=j1k4pib60NZrUWACuiahvKfh9s7O7BOhHRr4qoGG"
-    ).then((res) => res.json());
+    // const fetchReq7 = fetch(
+    //   "https://developer.nps.gov/api/v1/parks?start=300parkCode=&api_key=j1k4pib60NZrUWACuiahvKfh9s7O7BOhHRr4qoGG"
+    // ).then((res) => res.json());
 
-    const fetchReq8 = fetch(
-      "https://developer.nps.gov/api/v1/parks?start=350parkCode=&api_key=j1k4pib60NZrUWACuiahvKfh9s7O7BOhHRr4qoGG"
-    ).then((res) => res.json());
+    // const fetchReq8 = fetch(
+    //   "https://developer.nps.gov/api/v1/parks?start=350parkCode=&api_key=j1k4pib60NZrUWACuiahvKfh9s7O7BOhHRr4qoGG"
+    // ).then((res) => res.json());
 
-    const fetchReq9 = fetch(
-      "https://developer.nps.gov/api/v1/parks?start=400parkCode=&api_key=j1k4pib60NZrUWACuiahvKfh9s7O7BOhHRr4qoGG"
-    ).then((res) => res.json());
+    // const fetchReq9 = fetch(
+    //   "https://developer.nps.gov/api/v1/parks?start=400parkCode=&api_key=j1k4pib60NZrUWACuiahvKfh9s7O7BOhHRr4qoGG"
+    // ).then((res) => res.json());
 
-    const fetchReq10 = fetch(
-      "https://developer.nps.gov/api/v1/parks?start=450parkCode=&api_key=j1k4pib60NZrUWACuiahvKfh9s7O7BOhHRr4qoGG"
-    ).then((res) => res.json());
+    // const fetchReq10 = fetch(
+    //   "https://developer.nps.gov/api/v1/parks?start=450parkCode=&api_key=j1k4pib60NZrUWACuiahvKfh9s7O7BOhHRr4qoGG"
+    // ).then((res) => res.json());
 
     
-    const allData = Promise.all([fetchReq1, fetchReq2, fetchReq3, fetchReq4, fetchReq5, fetchReq6, fetchReq7, fetchReq8, fetchReq9, fetchReq10]);
-      allData.then(parks => console.log(parks))
+    const allData = Promise.all([fetchReq1]);
+      allData.then(parks => setParks(parks))
       
 
     const displayedParks = parks.filter((park) => {

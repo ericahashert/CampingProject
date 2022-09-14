@@ -63,7 +63,6 @@ function ParkPage() {
        }, [] )
 
 
-    console.log(parks)
       
     
      const displayedParks = parks.filter((park) => {

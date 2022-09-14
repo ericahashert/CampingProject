@@ -4,6 +4,24 @@ function ParkCard({image, name, description, activities, admission, addressStree
     const [showFront, setShowFront] = useState(true);
     //const [image, setImage] = useState("")
 
+    const [showFront, setShowFront] = useState(true)
+
+    function frontCard() {
+        return (
+        <img className="card-image" src={image} />
+        )
+    }
+
+    function backCard() {
+        return(
+        <img className="card-image" src="" />
+        )
+    }
+
+    function handleClick() {
+        setShowFront((showFront) => !showFront)
+      }
+    
 
     if (activities === undefined) return <p>LOADING...</p>
 

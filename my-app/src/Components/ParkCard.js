@@ -7,17 +7,36 @@ function ParkCard({image, name, description, activities, admission, addressStree
 
     if (activities === undefined) return <p>LOADING...</p>
 
-    // function handleClickEvent () {
-    //     if (image1 === true) {
-    //         return image2
-    //     } if (image2 === true) {
-    //         return image3
-    //     } if (image3 === true) {
-    //         return image4
-    //     } if (image4 === true) {
-    //         return image1
-    //     }
-    // }
+    function handleActivities (){
+        if (activities.length >= 4) {
+            console.log(4)
+            return( 
+                <ul>
+                    <li>{activities[0].name}</li>
+                    <li>{activities[1].name}</li>
+                    <li>{activities[2].name}</li>
+                    <li>{activities[3].name}</li>
+                </ul>
+            )
+            
+        } else if (activities.length === 3){
+            return( 
+                <ul>
+                    <li>{activities[0].name}</li>
+                    <li>{activities[1].name}</li>
+                    <li>{activities[2].name}</li>
+                </ul>
+            )
+        } else {
+            return( 
+                <ul>
+                    <li>{activities[0].name}</li>
+                    <li>{activities[1].name}</li>
+                </ul>
+            )
+        }
+
+    }
 
     function frontCard() {
         return (
@@ -36,12 +55,7 @@ function ParkCard({image, name, description, activities, admission, addressStree
             <div>
                 <p>{description}</p>
                 <p> Activities Include:</p>
-                    <ul>
-                        <li>{activities[0].name}</li>
-                        <li>{activities[1].name}</li>
-                        <li>{activities[2].name}</li>
-                        <li>{activities[3].name}</li>
-                    </ul>
+                <div>{handleActivities}</div>
             </div>
         )
     }

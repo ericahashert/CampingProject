@@ -39,14 +39,14 @@ function ParkCard({image, name, description, activities, admission, addressStree
 
     function frontCard() {
         return (
-            <li className="frontCard">
+            <ul className="frontCard">
                 <img className ="card-image" src={image}/>
                 <p>Admission: ${admission}</p>
                 <div className ="address">
                     <p>Address: {addressStreet}</p>
                     <p>{addressCity}, {addressState} {addressZip}</p>
                 </div>
-            </li>
+            </ul>
         )
     }
     function backCard() {

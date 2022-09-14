@@ -17,11 +17,11 @@ function Header () {
               <NavLink className="button" exact to="/">
                 Home
               </NavLink>
-
+              <p></p>
               <NavLink className="button" to="/Map">
                 Map
               </NavLink>
-
+              <p></p>
               <NavLink className="button" to="/Gallery">
                 Gallery
               </NavLink>

@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 
 function ParkCard({image, name, description, activities, admission, addressStreet, addressCity, addressState, addressZip}) {
-    const [showFront, setShowFront] = useState(true);
+    
     //const [image, setImage] = useState("")
 
     const [showFront, setShowFront] = useState(true)

@@ -23,6 +23,7 @@ function App() {
           <Route exact path="/">
               <ParkPage />
           </Route>
+          
           <Route path="/Gallery">
               <ParkGallery />
           </Route>

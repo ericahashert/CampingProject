@@ -2,6 +2,7 @@ import React, {useState, useEffect} from 'react';
 import ParkList from './ParkList';
 import Search from './Search';
 import ParkGallery from './ParkGallery';
+import ParkMap from './ParkMap'
 
 function ParkPage() {
     const [parks, setParks] = useState([ ]);
@@ -63,8 +64,7 @@ function ParkPage() {
         .then((data) => setParks(data.data))
        }, [] )
 
-
-    console.log(parks)
+       console.log(parks);
       
     
      const displayedParks = parks.filter((park) => {
@@ -82,10 +82,10 @@ function ParkPage() {
 
 return (
     <div>
-        {/* <Search searchTerm={searchTerm} onSearchChange={setSearchTerm}/> */}
-        {/* <ParkList parks={displayedParks}/> */}
-        <ParkGallery parks = {displayedParks}/>
-        
+        <Search searchTerm={searchTerm} onSearchChange={setSearchTerm}/>
+        <ParkList parks={displayedParks} />
+        <ParkGallery parks={displayedParks} />
+        <ParkMap parks={parks} />
     </div>
 )
 

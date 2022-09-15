@@ -8,6 +8,7 @@ import ParkGallery from './ParkGallery';
 import { Switch, Route } from "react-router-dom";
 
 
+
  // get parks up to app so you can pass it in 
 
 function App() {

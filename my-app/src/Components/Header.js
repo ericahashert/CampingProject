@@ -14,17 +14,21 @@ function Header () {
         </h1>
         <nav>
           <div className="navigation">
-              <NavLink className="button" exact to="/">
-                Home
-              </NavLink>
-              <p></p>
-              <NavLink className="button" to="/Map">
-                Map
-              </NavLink>
-              <p></p>
-              <NavLink className="button" to="/Gallery">
-                Gallery
-              </NavLink>
+              <button>
+                <NavLink className="button" exact to="/">
+                  Home
+                </NavLink>
+              </button>
+              <button>
+                <NavLink className="button" to="/Map">
+                  Map
+                </NavLink>
+              </button>
+              <button>
+                <NavLink className="button" to="/Gallery">
+                  Gallery
+                </NavLink>
+              </button>
           </div>
         </nav>
     </header>

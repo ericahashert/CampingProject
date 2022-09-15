@@ -57,8 +57,6 @@ function ParkCard({image, name, description, activities, admission, addressStree
                     <ul>
                         <li>{activities[0].name}</li>
                         <li>{activities[1].name}</li>
-                        <li>{activities[2].name}</li>
-                        <li>{activities[3].name}</li>
                     </ul>
             </div>
         )

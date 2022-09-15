@@ -70,7 +70,12 @@ function ParkPage() {
      const displayedParks = parks.filter((park) => {
        return park.fullName.toLowerCase().includes(searchTerm.toLowerCase());
       });
-
+      // const removeParks = () => {
+      //   setParks(parks => 
+      //     parks.filter(park =>{
+      //       return park.id !== 32;
+      //     }))}
+      //     console.log(removeParks());
 
   
       
@@ -78,7 +83,7 @@ function ParkPage() {
 return (
     <div>
         {/* <Search searchTerm={searchTerm} onSearchChange={setSearchTerm}/> */}
-        {/* <ParkList parks={displayedParks} /> */}
+        {/* <ParkList parks={displayedParks}/> */}
         <ParkGallery parks = {displayedParks}/>
         
     </div>

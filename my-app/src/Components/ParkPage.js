@@ -3,9 +3,12 @@ import ParkList from './ParkList';
 import Search from './Search';
 import ParkGallery from './ParkGallery';
 import ParkMap from './ParkMap';
+import App from './App';
 
-function ParkPage() {
-    const [parks, setParks] = useState([ ]);
+function ParkPage({ parks }) {
+    // const [parks, setParks] = useState([ ]);
+
+
     const [searchTerm, setSearchTerm] = useState("");
 
     // const fetchReq1 = fetch(
@@ -58,13 +61,13 @@ function ParkPage() {
     //     .then(parks => setParks(parks))
     //    }, [] )
 
-       useEffect( () => {
-        fetch("https://developer.nps.gov/api/v1/parks?start=50parkCode=&api_key=j1k4pib60NZrUWACuiahvKfh9s7O7BOhHRr4qoGG")
-        .then((res) => res.json())
-        .then((data) => setParks(data.data))
-       }, [] )
+    //    useEffect( () => {
+    //     fetch("https://developer.nps.gov/api/v1/parks?start=50parkCode=&api_key=j1k4pib60NZrUWACuiahvKfh9s7O7BOhHRr4qoGG")
+    //     .then((res) => res.json())
+    //     .then((data) => setParks(data.data))
+    //    }, [] )
 
-       console.log(parks);
+       
       
     
      const displayedParks = parks.filter((park) => {
@@ -79,7 +82,7 @@ return (
     <div>
         <Search searchTerm={searchTerm} onSearchChange={setSearchTerm}/>
         <ParkList parks={displayedParks} />
-        <ParkGallery parks={displayedParks} />
+        <ParkGallery parks={parks} />
         <ParkMap />
     </div>
 )

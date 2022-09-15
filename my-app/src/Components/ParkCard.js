@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 
-function ParkCard({image, name, description, activities, admission, addressStreet, addressCity, addressState, addressZip}) {
+function ParkCard({image, name, description, activities, entranceFees, addressStreet, addressCity, addressState, addressZip}) {
     
     //const [image, setImage] = useState("")
 
@@ -41,7 +41,7 @@ function ParkCard({image, name, description, activities, admission, addressStree
         return (
             <ul className="frontCard">
                 <img className ="card-image" src={image}/>
-                <p>Admission: ${admission}</p>
+                {/* <p>Admission: $ {entranceFees[0].cost} </p> */}
                 <div className ="address">
                     <p>Address: {addressStreet}</p>
                     <p>{addressCity}, {addressState} {addressZip}</p>

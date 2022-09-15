@@ -1,12 +1,11 @@
 import React, {useState, useEffect} from 'react';
 import ParkList from './ParkList';
 import Search from './Search';
-import ParkGallery from './ParkGallery';
 import ParkMap from './ParkMap';
 import App from './App';
 
 function ParkPage({ parks }) {
-    // const [parks, setParks] = useState([ ]);
+
 
 
     const [searchTerm, setSearchTerm] = useState("");
@@ -82,7 +81,6 @@ return (
     <div>
         <Search searchTerm={searchTerm} onSearchChange={setSearchTerm}/>
         <ParkList parks={displayedParks} />
-        <ParkGallery parks={parks} />
         <ParkMap />
     </div>
 )

@@ -5,7 +5,9 @@ import '../App.css';
 import ParkPage from './ParkPage';
 import ParkMap from './ParkMap';
 import ParkGallery from './ParkGallery';
+import VolunteerForm from './VolunteerForm.js';
 import { Switch, Route } from "react-router-dom";
+import { dblClick } from '@testing-library/user-event/dist/click.js';
 
 
 
@@ -42,6 +44,10 @@ function App() {
 
           <Route path="/Map">
               <ParkMap />
+          </Route>
+
+          <Route path="/Volunteer">
+              <VolunteerForm volunteers={[]}/>
           </Route>
         
         </Switch>

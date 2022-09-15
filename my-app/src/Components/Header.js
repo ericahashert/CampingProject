@@ -29,6 +29,11 @@ function Header () {
                   Gallery
                 </NavLink>
               </button>
+              <button>
+                <NavLink className="button" to="/Volunteer">
+                  Volunteer
+                </NavLink>
+              </button>
           </div>
         </nav>
     </header>

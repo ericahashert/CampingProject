@@ -2,7 +2,7 @@ import React, {useState, useEffect} from 'react';
 import ParkList from './ParkList';
 import Search from './Search';
 import ParkMap from './ParkMap';
-import App from './App';
+
 
 function ParkPage({ parks }) {
 

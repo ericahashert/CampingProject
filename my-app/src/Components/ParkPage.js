@@ -8,9 +8,9 @@ function ParkPage() {
     const [parks, setParks] = useState([ ]);
     const [searchTerm, setSearchTerm] = useState("");
 
-    // const fetchReq1 = fetch(
-    //   "https://developer.nps.gov/api/v1/parks?parkCode=&api_key=j1k4pib60NZrUWACuiahvKfh9s7O7BOhHRr4qoGG"
-    // ).then((res) => res.json());
+    const fetchReq1 = fetch(
+      "https://developer.nps.gov/api/v1/parks?parkCode=&api_key=j1k4pib60NZrUWACuiahvKfh9s7O7BOhHRr4qoGG"
+    ).then((res) => res.json());
 
     // const fetchReq2 = fetch(
     //   "https://developer.nps.gov/api/v1/parks?start=50parkCode=&api_key=j1k4pib60NZrUWACuiahvKfh9s7O7BOhHRr4qoGG"
@@ -50,7 +50,7 @@ function ParkPage() {
 
     
     // const allData = Promise.all([fetchReq1, fetchReq2, fetchReq3, fetchReq4, fetchReq5, fetchReq6, fetchReq7, fetchReq8, fetchReq9, fetchReq10]);
-    //   // allData.then(parks => console.log(parks))
+    //   allData.then(parks => console.log(parks))
     
     // useEffect( () => {
     //     fetch("https://developer.nps.gov/api/v1/parks?parkCode=&api_key=j1k4pib60NZrUWACuiahvKfh9s7O7BOhHRr4qoGG")
@@ -70,7 +70,12 @@ function ParkPage() {
      const displayedParks = parks.filter((park) => {
        return park.fullName.toLowerCase().includes(searchTerm.toLowerCase());
       });
-
+      // const removeParks = () => {
+      //   setParks(parks => 
+      //     parks.filter(park =>{
+      //       return park.id !== 32;
+      //     }))}
+      //     console.log(removeParks());
 
   
       

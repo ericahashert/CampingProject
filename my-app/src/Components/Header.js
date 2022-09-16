@@ -7,9 +7,9 @@ function Header () {
   return (
     <header>
         <h1>
-          National Parks
-          <span className="logo" role="img">
-            🌱
+          GoWild
+          <span role="img">
+            <img className="logo" src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/apple/325/camping_1f3d5-fe0f.png"></img>
           </span>
         </h1>
         <nav>
@@ -27,6 +27,11 @@ function Header () {
               <button>
                 <NavLink className="button" to="/Gallery">
                   Gallery
+                </NavLink>
+              </button>
+              <button>
+                <NavLink className="button" to="/Volunteer">
+                  Volunteer
                 </NavLink>
               </button>
           </div>

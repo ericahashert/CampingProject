@@ -1,24 +1,8 @@
 import React, {useState} from 'react';
 
-function ParkCard({image, name, description, activities, admission, addressStreet, addressCity, addressState, addressZip}) {
+function ParkCard({image, name, description, activities, addressStreet, addressCity, addressState, addressZip}) {
     //const [image, setImage] = useState("")
     const [showFront, setShowFront] = useState(true)
-
-    function frontCard() {
-        return (
-        <img className="card-image" src={image} />
-        )
-    }
-
-    function backCard() {
-        return(
-        <img className="card-image" src="" />
-        )
-    }
-
-    function handleClick() {
-        setShowFront((showFront) => !showFront)
-      }
     
 
     if (activities === undefined) return <p>LOADING...</p>
@@ -39,7 +23,6 @@ function ParkCard({image, name, description, activities, admission, addressStree
         return (
             <ul className="frontCard">
                 <img className ="card-image" src={image}/>
-                <p>Admission: ${admission}</p>
                 <div className ="address">
                     <p>Address: {addressStreet}</p>
                     <p>{addressCity}, {addressState} {addressZip}</p>
@@ -49,7 +32,7 @@ function ParkCard({image, name, description, activities, admission, addressStree
     }
     function backCard() {
         return (
-            <div>
+            <div className="backCard">
                 <p>{description}</p>
                 <p> Activities Include:</p>
                     <ul>

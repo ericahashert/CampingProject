@@ -6,6 +6,7 @@ import ParkPage from './ParkPage';
 import ParkMap from './ParkMap';
 import ParkGallery from './ParkGallery';
 import { Switch, Route } from "react-router-dom";
+import VolunteerForm from './VolunteerForm.js';
 
 
  // get parks up to app so you can pass it in 
@@ -41,6 +42,10 @@ function App() {
 
           <Route path="/Map">
               <ParkMap parks={parks}/>
+          </Route>
+
+          <Route path="/Volunteer">
+              <VolunteerForm volunteers={[]}/>
           </Route>
         
         </Switch>

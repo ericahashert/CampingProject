@@ -1,24 +1,24 @@
 import React from 'react';
 
 
-function ParkGallery ({ parks, image = 'https://s27363.pcdn.co/wp-content//2022/02/Best-National-Parks-USA-Photo.jpg.optimal.jpg' }){
+function ParkGallery ({ parks }){
 
 
 
-
+// image = 'https://s27363.pcdn.co/wp-content//2022/02/Best-National-Parks-USA-Photo.jpg.optimal.jpg' 
 
 
   const parkData = parks.reverse().map( park => 
     
         <img 
-        className = "gallery" 
+        className = "galleryCards" 
         alt = {park.images} 
         key = {park.id} 
         src = {park.images[0].url}
           />)
 
     return (
-      <ul className="cards">{parkData}</ul>
+      <ul className="galleryCards" >{parkData}</ul>
   );
 
 };

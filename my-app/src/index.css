@@ -20,6 +20,10 @@ header h1 {
   margin-left: 15%;
 }
 
+header h1 img {
+  width: 100px;
+}
+
 /* header nav div {
   font-size: 20px;
   letter-spacing: 3px;

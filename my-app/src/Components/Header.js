@@ -6,10 +6,10 @@ function Header () {
 
   return (
     <header>
-        <h1>
-          National Parks
-          <span className="logo" role="img">
-            🌱
+         <h1>
+          GoWild
+          <span role="img">
+            <img className="logo" src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/apple/325/camping_1f3d5-fe0f.png"></img>
           </span>
         </h1>
         <nav>

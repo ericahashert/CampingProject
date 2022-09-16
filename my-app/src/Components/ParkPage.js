@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import ParkList from './ParkList';
 import Search from './Search';
-import ParkMap from './ParkMap';
+// import ParkMap from './ParkMap';
 
 
 function ParkPage({ parks }) {
@@ -81,7 +81,7 @@ return (
     <div>
         <Search searchTerm={searchTerm} onSearchChange={setSearchTerm}/>
         <ParkList parks={displayedParks} />
-        <ParkMap />
+        {/* <ParkMap parks={parks}/> */}
     </div>
 )
 

@@ -1,8 +1,8 @@
 import React, {useState, useEffect} from 'react';
 import ParkList from './ParkList';
 import Search from './Search';
-import ParkGallery from './ParkGallery';
-import ParkMap from './ParkMap'
+// import ParkGallery from './ParkGallery';
+// import ParkMap from './ParkMap'
 
 function ParkPage() {
     const [parks, setParks] = useState([ ]);
@@ -84,8 +84,8 @@ return (
     <div>
         <Search searchTerm={searchTerm} onSearchChange={setSearchTerm}/>
         <ParkList parks={displayedParks} />
-        <ParkGallery parks={displayedParks} />
-        <ParkMap parks={parks} />
+        {/* <ParkGallery parks={displayedParks} />
+        <ParkMap parks={parks} /> */}
     </div>
 )
 

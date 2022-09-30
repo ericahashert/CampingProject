@@ -33,9 +33,9 @@ function ParkCard({image, name, description, activities, addressStreet, addressC
     function backCard() {
         return (
             <div className="backCard">
-                <p>{description}</p>
-                <p> Activities Include:</p>
-                    <ul>
+                <p className="description">{description}</p>
+                <p className="activities"> Activities Include:</p>
+                    <ul className="activityList">
                         <li>{activities[0].name}</li>
                         <li>{activities[1].name}</li>
                     </ul>
@@ -49,7 +49,6 @@ function ParkCard({image, name, description, activities, addressStreet, addressC
       }
     return (
         <div className = "card" onClick = {handleClick}>
-            
             <h4 className='card-title'>{name}</h4>
             <div className="container">
             {showFront ? frontCard() : backCard()}

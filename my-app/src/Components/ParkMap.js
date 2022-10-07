@@ -80,7 +80,7 @@ export default function ParkMap ({ parks }) {
   )
 }
 
-{/* <GoogleMap
+/* <GoogleMap
         mapContainerStyle={containerStyle}
         center={center}
         zoom={12}
@@ -98,4 +98,4 @@ export default function ParkMap ({ parks }) {
         
         }
         <></>
-      </GoogleMap> */}
+      </GoogleMap> */
